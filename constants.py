@@ -48,7 +48,7 @@ DOCUMENT_MAP = {
     ".txt": TextLoader,
     ".md": UnstructuredMarkdownLoader,
     ".py": TextLoader,
-    # ".pdf": PDFMinerLoader,
+    ".pdf": PDFMinerLoader,
     ".pdf": UnstructuredFileLoader,
     ".csv": CSVLoader,
     ".xls": UnstructuredExcelLoader,
@@ -103,12 +103,12 @@ EMBEDDING_MODEL_NAME = "hkunlp/instructor-large"  # Uses 1.5 GB of VRAM (High Ac
 # MODEL_ID = "TheBloke/Llama-2-7b-Chat-GGUF"
 # MODEL_BASENAME = "llama-2-7b-chat.Q4_K_M.gguf"
 
-# MODEL_ID = "QuantFactory/Meta-Llama-3-8B-Instruct-GGUF"
-# MODEL_BASENAME = "Meta-Llama-3-8B-Instruct.Q4_K_M.gguf"
+MODEL_ID = "QuantFactory/Meta-Llama-3-8B-Instruct-GGUF"
+MODEL_BASENAME = "Meta-Llama-3-8B-Instruct.Q4_K_M.gguf"
 
 # LLAMA 3 # use for Apple Silicon
-MODEL_ID = "meta-llama/Meta-Llama-3-8B-Instruct"
-MODEL_BASENAME = None
+#MODEL_ID = "meta-llama/Meta-Llama-3-8B-Instruct"
+#MODEL_BASENAME = None
 
 # LLAMA 3 # use for NVIDIA GPUs
 # MODEL_ID = "unsloth/llama-3-8b-bnb-4bit"
